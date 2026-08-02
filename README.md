@@ -6,7 +6,6 @@ Segmenting 2,000 supermarket loyalty-card customers into actionable groups using
 
 Most segmentation tutorials run K-Means and stop there. This project instead treats **method choice as a first-class question**: the dataset has mixed numeric and categorical variables, so it compares a naive K-Means baseline (one-hot encoded categoricals, Euclidean distance) against K-Prototypes and hierarchical clustering (both built on distance measures designed for mixed data) — and rather than assuming the "correct" method wins, it tests that empirically. The result is a genuine finding, not a foregone conclusion: K-Means' one-hot representation is dominated by categorical dimensionality (14 dummy columns vs. 2 numeric ones), so it barely differentiates customers by Income (ANOVA F=112) despite Income being a variable it was explicitly given — while K-Prototypes produces clusters ~6x more differentiated on Income (F=686), independently corroborated by hierarchical clustering.
 
-An R implementation covering the same K-Means/K-Prototypes/hierarchical comparison is also included in `r_analysis/` for reference.
 
 ## Dataset
 
@@ -50,8 +49,6 @@ customer-segmentation-project/
 │   └── customer_segmentation_analysis.ipynb   # full narrative analysis (Python)
 ├── outputs/
 │   └── figures/              # exported plots
-├── r_analysis/
-│   └── segmentation_analysis.R   # equivalent K-Means/K-Prototypes/hierarchical analysis in R
 ├── requirements.txt
 └── README.md
 ```
