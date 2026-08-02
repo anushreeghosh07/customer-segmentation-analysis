@@ -1,4 +1,4 @@
-# Customer Segmentation Analysis — FMCG Loyalty Card Data
+# Customer Segmentation Analysis
 
 Segmenting 2,000 supermarket loyalty-card customers into actionable groups using three clustering methods, backed by formal hypothesis testing — and an empirical, results-based justification for which method actually performs best, not just a theoretical one.
 
