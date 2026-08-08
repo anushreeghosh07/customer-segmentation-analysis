@@ -16,14 +16,13 @@ Most segmentation tutorials run K-Means and stop there. This project instead tre
 | Step | What it does |
 |---|---|
 | EDA | Distributions, income-by-education, age-vs-income relationships |
-| Hypothesis testing | Chi-square, t-test/Mann-Whitney, ANOVA/Kruskal-Wallis, Pearson correlation — each with automatic assumption checking (normality, equal variance) and fallback to the correct non-parametric test |
+| Hypothesis testing |  t-test/Mann-Whitney, ANOVA/Kruskal-Wallis, Pearson correlation — each with automatic assumption checking (normality, equal variance) and fallback to the correct non-parametric test |
 | K-Means | Naive baseline on one-hot encoded data; k chosen via elbow + silhouette |
 | K-Prototypes | Mixed-type clustering (Huang, 1998); k chosen via elbow (cost) + Gower-distance silhouette |
 | K-Means vs. K-Prototypes | Empirical (not just theoretical) comparison: Adjusted Rand Index, Gower silhouette, categorical purity, and Age/Income ANOVA F-statistics |
 | Hierarchical clustering | Gower distance + linkage comparison (average/complete/ward), cophenetic correlation, dendrogram, silhouette-based k selection |
 | Three-way comparison | All pairwise ARI + empirical metrics across K-Means, K-Prototypes, and Hierarchical |
 | Profiling | Per-cluster summary stats translated into business personas |
-| PCA | 2D projection for cluster visualization across all three methods + multicollinearity note |
 | Report | Findings, recommended method, limitations, next steps |
 
 ## Key results
